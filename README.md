@@ -1,0 +1,1 @@
+This is the project for Broadcasting any Message Format. Wheter Email, SMS dan Serialized Object (JSON, XML or Binary)
