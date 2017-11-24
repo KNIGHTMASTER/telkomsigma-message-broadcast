@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div style="border-style: solid;border-width: thin;border-color: #d1e1f9;font-family: 'Roboto';">
+    <div align="center" style="margin:15px;">
+        <img th:src="@{http://i.imgur.com/CHZ2yJs.png}" width="80" height="50"/>
+    </div>
+    <div align="left" style="margin:15px;">
+        Halo <span th:text="${customerName}"></span> ,
+        <br/><br/>
+        Kami menerima permintaan anda untuk melakukan verifikasi akun obu dengan nomor OBU <span th:text="${obuId}"></span>. Jika anda merasa tidak melakukannya, mohon abaikan email ini.
+        <br/><br/>
+        Setelah proses verifikasi data dilakukan, anda akan kembali mendapat email balasan dari sistem kami.
+        <br/><br/>
+        Untuk informasi lebih lanjut, anda bisa menghubungi call center kami.
+        <br/><br/>
+        Terimakasih
+        <br/><br/>
+        ETC Jasamarga
+        <br/>
+        <a th:href="${homeApp}" target="_blank" th:text="${homeApp}"></a>
+    </div>
+    <div align="center" style="margin:15px;">
+        <img th:src="@{http://i.imgur.com/4wM53Rg.png}" width="100" height="50"/>
+        <img th:src="@{http://i.imgur.com/6D8cLCQ.png}" height="40" style="margin-left: 50px;" />
+    </div>
+</div>
+</html>

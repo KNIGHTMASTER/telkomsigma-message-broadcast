@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div style="border-style: solid;border-width: thin;border-color: #d1e1f9;font-family: 'Roboto';">
+    <div align="center" style="margin:15px;"><img th:src="@{http://i.imgur.com/CHZ2yJs.png}" width="80" height="50"/></div>
+    <div align="left" style="margin:15px;">
+        Kami menerima permintaan melakukan reset password Anda. Jika Anda merasa tidak melakukan ini, mohon abaikan saja email ini. Email ini tidak akan berguna setelah 2 jam.
+        <br/><br/>
+        Untuk melanjutkan proses reset password, silahkan klik tautan dibawah ini.
+        <br/><br/>
+        <a th:href="${urlForgotPassword}" target="_blank" th:text="${urlForgotPassword}">'</a>
+        <br/><br/>
+        Setelah Anda meng-klik link di atas, Anda akan diarahkan ke halaman yang berisi untuk memasukkan password baru.
+        <br/><br/>
+        Terimakasih
+        <br/><br/>
+        ETC Jasamarga
+        <br/>
+        <a th:href="${homeApp}" target="_blank" th:text="${homeApp}"></a>
+    </div>
+    <div align="center" style="margin:15px;">
+        <img th:src="@{http://i.imgur.com/4wM53Rg.png}" width="100" height="50"/>
+        <img th:src="@{http://i.imgur.com/6D8cLCQ.png}" height="40" style="margin-left: 50px;" />
+    </div>
+</div>
+</html>
